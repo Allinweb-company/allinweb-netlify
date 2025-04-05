@@ -1488,6 +1488,7 @@ figcaption {
 .header81_image {
   object-fit: cover;
   width: 100%;
+  height: 100%;
   position: absolute;
   inset: 0%;
 }
@@ -2714,7 +2715,7 @@ figcaption {
 .pf_widget-title {
   color: var(--0color--text1);
   text-align: center;
-  font-size: 25.5vw;
+  font-size: 23vw;
   font-weight: 700;
   position: sticky;
   top: 100px;
@@ -2729,6 +2730,7 @@ figcaption {
 .flex-block-2 {
   justify-content: center;
   align-items: center;
+  margin-top: 140px;
   position: relative;
 }
 
@@ -3467,9 +3469,17 @@ figcaption {
 }
 
 .uui-footer08_component {
-  background-color: #f3f3f5;
+  background-color: var(--color-palette--white);
   padding-top: 2rem;
   position: relative;
+}
+
+.uui-footer08_component:where(.w-variant-1a90ba43-662d-15ff-5522-bcbaa124b02f) {
+  background-color: #f3f3f500;
+}
+
+.uui-footer08_component:where(.w-variant-bd990cfe-604e-14db-fe4e-d7bc7b6d5b46) {
+  background-color: #f7f7fa;
 }
 
 .footer_ci {
@@ -4452,9 +4462,9 @@ figcaption {
 
 .success-message-3 {
   color: #060606;
-  background-color: #c5e3d5;
+  background-color: #d6fdff;
   border-radius: 99px;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
 }
 
@@ -4523,7 +4533,7 @@ figcaption {
 }
 
 .external_link {
-  background-image: url('../images/kmong-icon.png');
+  background-image: url('../images/');
   background-position: 0%;
   background-repeat: no-repeat;
   background-size: 19px;
@@ -4536,6 +4546,122 @@ figcaption {
 
 .white_sapce {
   padding: 0;
+}
+
+.pf_wrap {
+  color: var(--color-palette--white);
+  padding: 1.25rem 3.125rem 0;
+  position: relative;
+}
+
+.pf_top_content {
+  z-index: 50;
+  justify-content: space-between;
+  align-items: flex-start;
+  display: flex;
+  position: relative;
+}
+
+.pf_top_heading {
+  font-size: var(--font-size--h2);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.pf_background_color {
+  position: absolute;
+  inset: 0%;
+}
+
+.pf_background_color.is-bg {
+  background-image: linear-gradient(#0ba5ec, #e8f8ff);
+}
+
+.pf_background_color.is-bg:where(.w-variant-c881fd5a-817b-19ff-6314-71adba2d11ef) {
+  background-image: linear-gradient(#0b1417, #e8f8ff);
+}
+
+.pf_background_color.is-bg:where(.w-variant-35125324-482d-7ce9-44e9-04f9533fd100) {
+  background-image: linear-gradient(#dd65a9, #ffe8f3);
+}
+
+.pf_background_color.is-bg:where(.w-variant-0e52a71b-fafb-d316-f5ae-44916b8ee6a0) {
+  background-image: linear-gradient(#76ac33, #e4ffc2);
+}
+
+.pf_background_color.is-bg:where(.w-variant-6f595905-468e-36f7-e3bc-0c40ac3c1c94) {
+  background-image: linear-gradient(#111, #d0d3db);
+}
+
+.pf_background_color.is-bg:where(.w-variant-7b80b56b-752a-63a8-f842-ef9a95fd9c36) {
+  background-image: linear-gradient(#471963, #ece1f4);
+}
+
+.pf_link_arrow {
+  color: var(--0color--background);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 4.75rem;
+  display: flex;
+}
+
+.pf_top_link {
+  transition: all .28s;
+  position: absolute;
+  inset: 0% 0% auto auto;
+}
+
+.pf_top_link:hover {
+  filter: drop-shadow(0 20px 12px #0000001a);
+  transform: translate(3px, -3px);
+}
+
+.pf_spacer {
+  height: 6.625rem;
+}
+
+.pf_content_left {
+  z-index: 500;
+  aspect-ratio: 65.4 / 55.1;
+  width: 100%;
+  max-width: 70%;
+  position: relative;
+  box-shadow: 200px 9px 49px #0000000f, 50px 11px 35px #0000001a;
+}
+
+.pf_image_wrapp {
+  position: relative;
+}
+
+.pf_image_right_absolute {
+  aspect-ratio: 35.6 / 49;
+  width: 100%;
+  max-width: 30%;
+  position: absolute;
+  inset: auto 0% 0 auto;
+}
+
+.pf_image_right_image, .pf_content_image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0%;
+}
+
+.contactus_background {
+  pointer-events: none;
+  position: absolute;
+  inset: -1% 0% 0%;
+}
+
+.contactus_background_img {
+  opacity: .42;
+  width: 95%;
+  height: 100%;
+  position: absolute;
+  inset: 0% auto auto -27%;
 }
 
 @media screen and (max-width: 991px) {
@@ -6135,6 +6261,10 @@ figcaption {
     left: 45%;
   }
 
+  .flex-block-2 {
+    margin-top: 40px;
+  }
+
   .uui-contact14_component {
     grid-row-gap: 48px;
     grid-template-columns: 1fr;
@@ -6263,6 +6393,24 @@ figcaption {
 
   .form-checkbox-field {
     max-width: 170px;
+  }
+
+  .pf_wrap {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+
+  .pf_top_heading {
+    font-size: 1.5rem;
+  }
+
+  .pf_top_link {
+    transform-origin: 100% 0;
+    transform: scale(.6);
+  }
+
+  .pf_spacer {
+    height: 2rem;
   }
 }
 
